@@ -1,0 +1,90 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=HSCD_Final_Project
+
+[Library]
+HSCD_Final_Project=.\HSCD_Final_Project.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+HSCD_Final_Project=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=processor_tb|testbench_for_processor|1 
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+outputWaveforms=1
+
+[Files]
+/ControlUnit.vhd=-1
+/ROM.vhd=-1
+/Register.vhd=-1
+/PC.vhd=-1
+/IR.vhd=-1
+/MUX4-1.vhd=-1
+/MUX2-1.vhd=-1
+/ALU.vhd=-1
+/PROCESSOR.vhd=-1
+TestBench/processor_TB.vhd=-1
+TestBench/processor_TB_runtest.do=-1
+outputWaveforms/evenSumBellow10.asdb=-1
+outputWaveforms/evenSumBellow10.awc=-1
+outputWaveforms/5plus3.asdb=-1
+outputWaveforms/5plus3.awc=-1
+outputWaveforms/7mul8(loop).asdb=-1
+outputWaveforms/7mul8(loop).awc=-1
+outputWaveforms/7MUL8.asdb=-1
+outputWaveforms/7MUL8.awc=-1
+
+[Files.Data]
+.\src\ControlUnit.vhd=VHDL Source Code
+.\src\ROM.vhd=VHDL Source Code
+.\src\Register.vhd=VHDL Source Code
+.\src\PC.vhd=VHDL Source Code
+.\src\IR.vhd=VHDL Source Code
+.\src\MUX4-1.vhd=VHDL Source Code
+.\src\MUX2-1.vhd=VHDL Source Code
+.\src\ALU.vhd=VHDL Source Code
+.\src\PROCESSOR.vhd=VHDL Source Code
+.\src\TestBench\processor_TB.vhd=VHDL Test Bench
+.\src\TestBench\processor_TB_runtest.do=Macro
+.\src\outputWaveforms\evenSumBellow10.asdb=Accelerated Waveform File
+.\src\outputWaveforms\evenSumBellow10.awc=Accelerated Waveform Configuration
+.\src\outputWaveforms\5plus3.asdb=Accelerated Waveform File
+.\src\outputWaveforms\5plus3.awc=Accelerated Waveform Configuration
+.\src\outputWaveforms\7mul8(loop).asdb=Accelerated Waveform File
+.\src\outputWaveforms\7mul8(loop).awc=Accelerated Waveform Configuration
+.\src\outputWaveforms\7MUL8.asdb=Accelerated Waveform File
+.\src\outputWaveforms\7MUL8.awc=Accelerated Waveform Configuration
+

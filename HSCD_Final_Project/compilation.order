@@ -1,0 +1,10 @@
+.\src\ControlUnit.vhd
+.\src\ROM.vhd
+.\src\Register.vhd
+.\src\PC.vhd
+.\src\IR.vhd
+.\src\MUX4-1.vhd
+.\src\MUX2-1.vhd
+.\src\ALU.vhd
+.\src\PROCESSOR.vhd
+.\src\TestBench\processor_TB.vhd

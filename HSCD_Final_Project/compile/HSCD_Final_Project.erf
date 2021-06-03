@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\ROM.vhd" 
+MESSAGE "Compile Entity "ROM"" 
+MESSAGE "Compile Architecture "behaviour" of Entity "ROM"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

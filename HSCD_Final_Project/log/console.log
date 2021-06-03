@@ -1,0 +1,280 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.1 [s].
+acom -O3 -work HSCD_Final_Project -2002  $dsn/src/ROM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "behaviour" of Entity "ROM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.2 [s]
+acom -O3 -work HSCD_Final_Project -2002  $dsn/src/PROCESSOR.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\PROCESSOR.vhd
+# Compile Entity "PROCESSOR"
+# Compile Architecture "behaviour" of Entity "PROCESSOR"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+SetActiveLib -work
+comp -include "$dsn\src\PROCESSOR.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\PROCESSOR.vhd
+# Compile Entity "PROCESSOR"
+# Compile Architecture "behaviour" of Entity "PROCESSOR"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+comp -include "$dsn\src\TestBench\processor_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+asim +access +r TESTBENCH_FOR_processor 
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: You do not have a license to run VHDL performance optimized simulation. Contact Aldec for ordering information - sales@aldec.com.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6465 kB (elbread=1023 elab2=5093 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\wave.asdb
+#  1:19 PM, Monday, July 20, 2020
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+wave 
+wave -noreg clk
+wave -noreg ControlRST
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\processor_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_processor 
+# 2 signal(s) traced.
+# add wave -noreg {/UUT/ld0}
+# add wave -noreg {/UUT/ld1}
+# add wave -noreg {/UUT/ld2}
+# add wave -noreg {/UUT/ld3}
+# add wave -noreg {/UUT/ldpc}
+# add wave -noreg {/UUT/ldir}
+# add wave -noreg {/UUT/s00}
+# add wave -noreg {/UUT/s01}
+# add wave -noreg {/UUT/s10}
+# add wave -noreg {/UUT/s11}
+# add wave -noreg {/UUT/bus_sel}
+# add wave -noreg {/UUT/cmd}
+# add wave -noreg {/UUT/inc}
+# add wave -noreg {/UUT/rst}
+# add wave -noreg {/UUT/zr0}
+# add wave -noreg {/UUT/zr1}
+# add wave -noreg {/UUT/zr2}
+# add wave -noreg {/UUT/zr3}
+# add wave -noreg {/UUT/ROUT0}
+# add wave -noreg {/UUT/ROUT1}
+# add wave -noreg {/UUT/ROUT2}
+# add wave -noreg {/UUT/ROUT3}
+# add wave -noreg {/UUT/ROUTPC}
+# add wave -noreg {/UUT/ROUTIR}
+# add wave -noreg {/UUT/MData}
+# add wave -noreg {/UUT/BUS_DATA}
+# add wave -noreg {/UUT/MUX0_DATA}
+# add wave -noreg {/UUT/MUX1_DATA}
+# add wave -noreg {/UUT/ALURes}
+# 29 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\5plus3.asdb ... Done
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\5plus3.awc ... Done
+SetActiveLib -work
+comp -include "$dsn\src\PROCESSOR.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\PROCESSOR.vhd
+# Compile Entity "PROCESSOR"
+# Compile Architecture "behaviour" of Entity "PROCESSOR"
+# Compile success 0 Errors 0 Warnings  Analysis time :  93.0 [ms]
+comp -include "$dsn\src\TestBench\processor_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_processor 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+acom -O3 -work HSCD_Final_Project -2002  $dsn/src/ROM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "behaviour" of Entity "ROM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: You do not have a license to run VHDL performance optimized simulation. Contact Aldec for ordering information - sales@aldec.com.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6469 kB (elbread=1023 elab2=5096 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\wave.asdb
+#  1:33 PM, Monday, July 20, 2020
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+wave 
+wave -noreg clk
+wave -noreg ControlRST
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\processor_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_processor 
+# 2 signal(s) traced.
+# add wave -noreg {/UUT/ld0}
+# add wave -noreg {/UUT/ld1}
+# add wave -noreg {/UUT/ld2}
+# add wave -noreg {/UUT/ld3}
+# add wave -noreg {/UUT/ldpc}
+# add wave -noreg {/UUT/ldir}
+# add wave -noreg {/UUT/s00}
+# add wave -noreg {/UUT/s01}
+# add wave -noreg {/UUT/s10}
+# add wave -noreg {/UUT/s11}
+# add wave -noreg {/UUT/bus_sel}
+# add wave -noreg {/UUT/cmd}
+# add wave -noreg {/UUT/inc}
+# add wave -noreg {/UUT/rst}
+# add wave -noreg {/UUT/zr0}
+# add wave -noreg {/UUT/zr1}
+# add wave -noreg {/UUT/zr2}
+# add wave -noreg {/UUT/zr3}
+# add wave -noreg {/UUT/ROUT0}
+# add wave -noreg {/UUT/ROUT1}
+# add wave -noreg {/UUT/ROUT2}
+# add wave -noreg {/UUT/ROUT3}
+# add wave -noreg {/UUT/ROUTPC}
+# add wave -noreg {/UUT/ROUTIR}
+# add wave -noreg {/UUT/MData}
+# add wave -noreg {/UUT/BUS_DATA}
+# add wave -noreg {/UUT/MUX0_DATA}
+# add wave -noreg {/UUT/MUX1_DATA}
+# add wave -noreg {/UUT/ALURes}
+# 29 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\7mul8(loop).asdb ... Done
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\7mul8(loop).awc ... Done
+SetActiveLib -work
+comp -include "$dsn\src\PROCESSOR.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\PROCESSOR.vhd
+# Compile Entity "PROCESSOR"
+# Compile Architecture "behaviour" of Entity "PROCESSOR"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+comp -include "$dsn\src\TestBench\processor_TB.vhd" 
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\TestBench\processor_TB.vhd
+# Compile Entity "processor_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "processor_tb"
+# Compile Configuration "TESTBENCH_FOR_processor"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+asim +access +r TESTBENCH_FOR_processor 
+#  Simulation has been stopped
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+acom -O3 -work HSCD_Final_Project -2002  $dsn/src/ROM.vhd
+# Compile...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available.
+# File: e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\ROM.vhd
+# Compile Entity "ROM"
+# Compile Architecture "behaviour" of Entity "ROM"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: You do not have a license to run VHDL performance optimized simulation. Contact Aldec for ordering information - sales@aldec.com.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6465 kB (elbread=1023 elab2=5093 kernel=348 sdf=0)
+# KERNEL: ASDB file was created in location e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\wave.asdb
+#  2:04 PM, Monday, July 20, 2020
+#  Simulation has been initialized
+#  Selected Top-Level: testbench_for_processor
+wave 
+wave -noreg clk
+wave -noreg ControlRST
+# # The following lines can be used for timing simulation
+# # acom <backannotated_vhdl_file_name>
+# # comp -include "$dsn\src\TestBench\processor_TB_tim_cfg.vhd" 
+# # asim +access +r TIMING_FOR_processor 
+# 2 signal(s) traced.
+# add wave -noreg {/UUT/ld0}
+# add wave -noreg {/UUT/ld1}
+# add wave -noreg {/UUT/ld2}
+# add wave -noreg {/UUT/ld3}
+# add wave -noreg {/UUT/ldpc}
+# add wave -noreg {/UUT/ldir}
+# add wave -noreg {/UUT/s00}
+# add wave -noreg {/UUT/s01}
+# add wave -noreg {/UUT/s10}
+# add wave -noreg {/UUT/s11}
+# add wave -noreg {/UUT/bus_sel}
+# add wave -noreg {/UUT/cmd}
+# add wave -noreg {/UUT/inc}
+# add wave -noreg {/UUT/rst}
+# add wave -noreg {/UUT/zr0}
+# add wave -noreg {/UUT/zr1}
+# add wave -noreg {/UUT/zr2}
+# add wave -noreg {/UUT/zr3}
+# add wave -noreg {/UUT/ROUT0}
+# add wave -noreg {/UUT/ROUT1}
+# add wave -noreg {/UUT/ROUT2}
+# add wave -noreg {/UUT/ROUT3}
+# add wave -noreg {/UUT/ROUTPC}
+# add wave -noreg {/UUT/ROUTIR}
+# add wave -noreg {/UUT/MData}
+# add wave -noreg {/UUT/BUS_DATA}
+# add wave -noreg {/UUT/MUX0_DATA}
+# add wave -noreg {/UUT/MUX1_DATA}
+# add wave -noreg {/UUT/ALURes}
+# 29 signal(s) traced.
+run 1000 ns
+# KERNEL: stopped at time: 1 us
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\7MUL8.asdb ... Done
+# Adding file e:\Progrmming\VHDL Projects\HSCD_Final_Project\HSCD_Final_Project\HSCD_Final_Project\src\outputWaveforms\7MUL8.awc ... Done
+#  Simulation has been stopped

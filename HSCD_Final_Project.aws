@@ -1,0 +1,12 @@
+[Version]
+Version=8.3
+[Designs]
+hscd_final_project=.\HSCD_Final_Project\HSCD_Final_Project.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+hscd_final_project=1

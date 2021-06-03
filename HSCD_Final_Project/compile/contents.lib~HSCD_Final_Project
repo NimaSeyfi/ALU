@@ -1,0 +1,22 @@
+1246
+~E 1 "./src/MUX2-1.vhd" 5 mux21
+~A 1 "./src/MUX2-1.vhd" 17 behaviour
+~E 1 "./src/ControlUnit.vhd" 5 control
+~A 1 "./src/ControlUnit.vhd" 19 behaviour
+~E 1 "./src/ALU.vhd" 5 alu
+~A 1 "./src/ALU.vhd" 17 behaviour
+~E 1 "./src/IR.vhd" 5 ir
+~A 1 "./src/IR.vhd" 17 behaviour
+~E 1 "./src/TestBench/processor_TB.vhd" 7 processor_tb
+~A 1 "./src/TestBench/processor_TB.vhd" 15 tb_architecture
+~E 1 "./src/PC.vhd" 5 pc
+~A 1 "./src/PC.vhd" 17 behaviour
+~E 1 "./src/MUX4-1.vhd" 5 mux41
+~A 1 "./src/MUX4-1.vhd" 17 behaviour
+~E 1 "./src/PROCESSOR.vhd" 5 processor
+~A 1 "./src/PROCESSOR.vhd" 17 behaviour
+~E 1 "./src/ROM.vhd" 5 rom
+~A 1 "./src/ROM.vhd" 17 behaviour
+~E 1 "./src/Register.vhd" 5 reg
+~A 1 "./src/Register.vhd" 18 behaviour
+~C 1 "./src/TestBench/processor_TB.vhd" 62 testbench_for_processor

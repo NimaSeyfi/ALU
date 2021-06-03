@@ -1,0 +1,7 @@
+i<>.\src\Register.vhd
+i<>.\src\PC.vhd
+i<>.\src\IR.vhd
+i<>.\src\MUX4-1.vhd
+i<>.\src\ALU.vhd
+i<>.\src\PROCESSOR.vhd
+i<>.\src\TestBench\processor_TB.vhd
